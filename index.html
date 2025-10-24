@@ -5,15 +5,53 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Vitalii Hapon - Software Developer</title>
+    <title>Vitalii Hapon – Software Developer Portfolio</title>
+    <meta name="description"
+          content="Portfolio of Vitalii Hapon, a software developer building performant, accessible web experiences. Explore recent projects in WordPress, Symfony, React, and more."/>
     <link rel="icon" href="favicon.ico">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Vitalii Hapon – Software Developer Portfolio"/>
+    <meta property="og:description"
+          content="Explore selected projects and values. Performance, accessibility, and maintainable code."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="/images/video.png"/>
+
     <!-- Alpine.js CDN -->
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
     <link href="css/style.css" rel="stylesheet">
     <link href="css/avatar.css" rel="stylesheet">
     <!-- Swiper CSS CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-  <script src="/js/header.js" defer></script>
+    <script src="/js/header.js" defer></script>
+
+    <!-- Structured Data: Person + WebSite -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Vitalii Hapon Portfolio",
+            "url": "/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "/projects/blog-grid.html?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Vitalii Hapon",
+            "jobTitle": "Software Developer",
+            "url": "/",
+            "image": "/images/avatar/hapon.png",
+            "sameAs": [
+                "https://www.linkedin.com/in/vitalii-hapon/",
+                "https://github.com/gapon1"
+            ]
+        }
+    </script>
 </head>
 
 <body x-data="{ page: 'home', 'loaded': true, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }">
@@ -32,10 +70,12 @@
                         class="absolute -z-1 -top-[112%] sm:-top-[93%] xl:-top-[62%] left-1/2 -translate-x-1/2 -u-z-10 hero-circle-gradient w-full h-[1046px] rounded-full max-w-[1046px]">
                 </div>
                 <div class="absolute top-0 left-1/2 -translate-x-1/2 -u-z-10">
-                    <img src="images/blur-02.svg" alt="" aria-hidden="true" role="presentation" class="max-w-none" loading="lazy">
+                    <img src="images/blur-02.svg" alt="" aria-hidden="true" role="presentation" class="max-w-none"
+                         loading="lazy">
                 </div>
                 <div class="absolute top-0 left-1/2 -translate-x-1/2 -u-z-10">
-                    <img src="images/blur-01.svg" alt="" aria-hidden="true" role="presentation" class="max-w-none" loading="lazy">
+                    <img src="images/blur-01.svg" alt="" aria-hidden="true" role="presentation" class="max-w-none"
+                         loading="lazy">
                 </div>
             </div>
         </div>
@@ -179,25 +219,25 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
                 <!-- blog item -->
                 <div class="wow fadeInUp group relative">
-                        <div class="mb-6 overflow-hidden rounded-xl">
-                            <img src="images/works/Pnw2.png" alt="image"
-                                 class="ease-linear w-full duration-500 scale-100 group-hover:scale-125"/>
-                        </div>
+                    <div class="mb-6 overflow-hidden rounded-xl">
+                        <img src="images/works/Pnw2.png" alt="PNW Warehousing website preview" loading="lazy"
+                             class="ease-linear w-full duration-500 scale-100 group-hover:scale-125"/>
+                    </div>
                     <div class="absolute inset-0 flex items-center justify-center bg-purple-600 text-white rounded opacity-0 group-hover:opacity-100 transition duration-300">
                         <button onclick="window.location.href='projects/pnw.html'" class="btn">
                             View Details
                         </button>
                     </div>
                 </div>
-              <!-- blog item -->
+                <!-- blog item -->
                 <!-- blog item -->
                 <div class="wow fadeInUp group relative">
                     <div class="mb-6 overflow-hidden rounded-xl">
-                        <img src="images/works/GBC.png" alt="image"
+                        <img src="images/works/GBC.png" alt="GBC Time online magazine preview" loading="lazy"
                              class="ease-linear w-full duration-500 scale-100 group-hover:scale-125"/>
                     </div>
                     <div class="absolute inset-0 flex items-center justify-center bg-purple-600 text-white rounded opacity-0 group-hover:opacity-100 transition duration-300">
-                        <button  onclick="window.location.href='projects/gbc.html'" class="btn">
+                        <button onclick="window.location.href='projects/gbc.html'" class="btn">
                             View Details
                         </button>
                     </div>
@@ -206,11 +246,11 @@
                 <!-- blog item -->
                 <div class="wow fadeInUp group relative">
                     <div class="mb-6 overflow-hidden rounded-xl">
-                        <img src="images/works/Books.png" alt="image"
+                        <img src="images/works/Books.png" alt="Barvinok Books e-commerce preview" loading="lazy"
                              class="ease-linear w-full duration-500 scale-100 group-hover:scale-125"/>
                     </div>
                     <div class="absolute inset-0 flex items-center justify-center bg-purple-600 text-white rounded opacity-0 group-hover:opacity-100 transition duration-300">
-                        <button  onclick="window.location.href='projects/book.html'" class="btn">
+                        <button onclick="window.location.href='projects/book.html'" class="btn">
                             View Details
                         </button>
                     </div>
@@ -219,11 +259,11 @@
                 <!-- blog item -->
                 <div class="wow fadeInUp group relative">
                     <div class="mb-6 overflow-hidden rounded-xl">
-                        <img src="images/works/banner-stn-2a.png" alt="image"
+                        <img src="images/works/banner-stn-2a.png" alt="Suntehnika website preview" loading="lazy"
                              class="ease-linear w-full duration-500 scale-100 group-hover:scale-125"/>
                     </div>
                     <div class="absolute inset-0 flex items-center justify-center bg-purple-600 text-white rounded opacity-0 group-hover:opacity-100 transition duration-300">
-                        <button  onclick="window.location.href='projects/suntech.html'" class="btn">
+                        <button onclick="window.location.href='projects/suntech.html'" class="btn">
                             View Details
                         </button>
                     </div>
@@ -232,12 +272,12 @@
             </div>
 
         </div>
-      <div class="wow fadeInUp text-center">
-        <a href="/projects/blog-grid.html"
-           class="hero-button-gradient inline-flex rounded-lg py-3 px-7 text-white font-medium ease-in duration-300 hover:opacity-80">
-          See all projects
-        </a>
-      </div>
+        <div class="wow fadeInUp text-center">
+            <a href="/projects/blog-grid.html"
+               class="hero-button-gradient inline-flex rounded-lg py-3 px-7 text-white font-medium ease-in duration-300 hover:opacity-80">
+                See all projects
+            </a>
+        </div>
     </section>
     <!-- ====== Blog Section End -->
     <!-- ====== Avatar Section Start -->
@@ -247,13 +287,16 @@
             <div class="relative top-18">
                 <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden -my-55">
                     <div class="absolute left-1/2 -translate-x-1/2 top-0">
-                        <img src="images/blur-13.svg" alt="" aria-hidden="true" role="presentation" class="max-w-none" loading="lazy">
+                        <img src="images/blur-13.svg" alt="" aria-hidden="true" role="presentation" class="max-w-none"
+                             loading="lazy">
                     </div>
                     <div class="absolute left-1/2 -translate-x-1/2 top-0">
-                        <img src="images/blur-14.svg" alt="" aria-hidden="true" role="presentation" class="max-w-none" loading="lazy">
+                        <img src="images/blur-14.svg" alt="" aria-hidden="true" role="presentation" class="max-w-none"
+                             loading="lazy">
                     </div>
                     <div class="absolute left-1/2 -translate-x-1/2 top-0">
-                        <img src="images/blur-15.svg" alt="" aria-hidden="true" role="presentation" class="max-w-none" loading="lazy">
+                        <img src="images/blur-15.svg" alt="" aria-hidden="true" role="presentation" class="max-w-none"
+                             loading="lazy">
                     </div>
                 </div>
                 <div
@@ -322,26 +365,34 @@
                                 </div>
 
                                 <div class="max-w-[428px] w-full hidden sm:block">
-                                    <img src="images/big-icon.svg" alt="" aria-hidden="true" role="presentation" loading="lazy"/>
+                                    <img src="images/big-icon.svg" alt="" aria-hidden="true" role="presentation"
+                                         loading="lazy"/>
                                 </div>
                             </div>
 
                             <!-- bg shapes -->
                             <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden -mx-28">
                   <span class="absolute right-0 bottom-0"><img src="images/shape-01.png"
-                                                               alt="" aria-hidden="true" role="presentation" loading="lazy"/></span>
-                                <span class="absolute left-0 top-0"><img src="images/shape-02.svg" alt="" aria-hidden="true" role="presentation" loading="lazy"/></span>
+                                                               alt="" aria-hidden="true" role="presentation"
+                                                               loading="lazy"/></span>
+                                <span class="absolute left-0 top-0"><img src="images/shape-02.svg" alt=""
+                                                                         aria-hidden="true" role="presentation"
+                                                                         loading="lazy"/></span>
                                 <span class="absolute left-1/2 -translate-x-1/2 bottom-0">
-                    <img src="images/blur-03.svg" alt="" aria-hidden="true" role="presentation" class="max-w-none" loading="lazy">
+                    <img src="images/blur-03.svg" alt="" aria-hidden="true" role="presentation" class="max-w-none"
+                         loading="lazy">
                   </span>
                                 <span class="absolute left-1/2 -translate-x-1/2 bottom-0">
-                    <img src="images/blur-04.svg" alt="" aria-hidden="true" role="presentation" class="max-w-none" loading="lazy">
+                    <img src="images/blur-04.svg" alt="" aria-hidden="true" role="presentation" class="max-w-none"
+                         loading="lazy">
                   </span>
                                 <span class="absolute left-1/2 -translate-x-1/2 bottom-0">
-                    <img src="images/blur-05.svg" alt="" aria-hidden="true" role="presentation" class="max-w-none" loading="lazy">
+                    <img src="images/blur-05.svg" alt="" aria-hidden="true" role="presentation" class="max-w-none"
+                         loading="lazy">
                   </span>
                                 <span class="absolute right-0 top-0">
-                    <img src="images/shape-03.svg" alt="" aria-hidden="true" role="presentation" class="max-w-none" loading="lazy"/>
+                    <img src="images/shape-03.svg" alt="" aria-hidden="true" role="presentation" class="max-w-none"
+                         loading="lazy"/>
                   </span>
                             </div>
                         </div>
@@ -541,13 +592,16 @@
                 <!-- bg shapes -->
                 <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
             <span class="absolute left-1/2 top-0 -translate-x-1/2 -z-1">
-              <img src="images/blur-19.svg" alt="" aria-hidden="true" role="presentation" class="max-w-none" loading="lazy">
+              <img src="images/blur-19.svg" alt="" aria-hidden="true" role="presentation" class="max-w-none"
+                   loading="lazy">
             </span>
                     <span class="absolute left-1/2 top-0 -translate-x-1/2 -z-1">
-              <img src="images/blur-20.svg" alt="" aria-hidden="true" role="presentation" class="max-w-none" loading="lazy">
+              <img src="images/blur-20.svg" alt="" aria-hidden="true" role="presentation" class="max-w-none"
+                   loading="lazy">
             </span>
                     <span class="absolute left-1/2 top-0 -translate-x-1/2 -z-1">
-              <img src="images/blur-21.svg" alt="" aria-hidden="true" role="presentation" class="max-w-none" loading="lazy">
+              <img src="images/blur-21.svg" alt="" aria-hidden="true" role="presentation" class="max-w-none"
+                   loading="lazy">
             </span>
                 </div>
 
@@ -570,14 +624,16 @@
 
                 <!-- support form -->
                 <div class="form-box-gradient relative overflow-hidden rounded-[25px] bg-dark p-6 sm:p-8 xl:p-15">
-                    <form id="contact-form" action="mail/mailer.php" class="relative z-10" method="post" aria-describedby="form-status" novalidate>
+                    <form id="contact-form" action="mail/mailer.php" class="relative z-10" method="post"
+                          aria-describedby="form-status" novalidate>
                         <div class="-mx-4 xl:-mx-10 flex flex-wrap">
                             <div class="w-full px-4 xl:px-5 md:w-1/2">
                                 <div class="mb-9.5">
                                     <label for="name" class="text-white mb-2.5 block font-medium">
                                         Name
                                     </label>
-                                    <input id="name" type="text" name="name" placeholder="Enter your Name" autocomplete="name" required
+                                    <input id="name" type="text" name="name" placeholder="Enter your Name"
+                                           autocomplete="name" required
                                            class="rounded-lg border border-white/[0.12] bg-white/[0.05] focus:border-purple w-full py-3 px-6 outline-none"/>
                                 </div>
                             </div>
@@ -586,7 +642,8 @@
                                     <label for="email" class="text-white mb-2.5 block font-medium">
                                         Email
                                     </label>
-                                    <input id="email" type="email" name="email" placeholder="Enter your Email" autocomplete="email" required
+                                    <input id="email" type="email" name="email" placeholder="Enter your Email"
+                                           autocomplete="email" required
                                            class="rounded-lg border border-white/[0.12] bg-white/[0.05] focus:border-purple w-full py-3 px-6 outline-none"/>
                                 </div>
                             </div>
@@ -595,14 +652,15 @@
                                     <label for="message" class="text-white mb-2.5 block font-medium">
                                         Message
                                     </label>
-                                    <textarea id="message" name="message" placeholder="Type your message" rows="6" required autocomplete="off"
+                                    <textarea id="message" name="message" placeholder="Type your message" rows="6"
+                                              required autocomplete="off"
                                               class="rounded-lg border border-white/[0.12] bg-white/[0.05] focus:border-purple w-full py-5 px-6 outline-none"></textarea>
                                 </div>
                             </div>
                             <div class="w-full px-4 xl:px-5">
                                 <div class="text-center">
                                     <button type="submit"
-                                       class="hero-button-gradient inline-flex rounded-lg py-3 px-7 text-white font-medium ease-in duration-300 hover:opacity-80">
+                                            class="hero-button-gradient inline-flex rounded-lg py-3 px-7 text-white font-medium ease-in duration-300 hover:opacity-80">
                                         Send Message
                                     </button>
                                     <div id="form-status" aria-live="polite" class="sr-only"></div>
@@ -688,7 +746,7 @@
         @scroll.window="scrollTop = (window.pageYOffset > 50) ? true : false" :class="{ '!flex' : scrollTop }">
     <svg class="fill-white w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
         <path
-                d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
+                d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"/>
     </svg>
 </button>
 <!-- ====== Back To Top End ===== -->
