@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Email configuration
-    $to = "gaponvv007@gmal.com";
+    $to = "gaponvv007@gmail.com";
     $subject = "New Contact Form Submission";
     $headers = "From: $email\r\n";
     $headers .= "Reply-To: $email\r\n";

@@ -4696,3 +4696,11 @@ body{
   height: 100%;
   position: relative;
 }
+/* Accessibility/Forms: ensure inline field errors render red consistently across pages */
+.field-error {
+  color: #ef4444 !important; /* Tailwind red-500 fallback */
+}
+
+.text-green-500{
+  color: greenyellow;
+}
