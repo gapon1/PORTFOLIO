@@ -5,7 +5,7 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Vitalii Hapon - Web Developer</title>
+    <title>Vitalii Hapon - Software Developer</title>
     <link rel="icon" href="favicon.ico">
     <!-- Alpine.js CDN -->
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
@@ -24,7 +24,7 @@
         <div class="w-full lg:w-1/4 flex items-center justify-between">
             <a href="/index.html">
                 <!--        <img width="50" src="images/avatar/avatar.jpeg" alt="Logo" />-->
-                <div><p>Web Developer</p></div>
+                <div><p>Software Developer</p></div>
             </a>
 
             <!-- Hamburger Toggle BTN -->
@@ -80,10 +80,17 @@
             </nav>
 
             <div class="flex items-center gap-6 mt-7 lg:mt-0">
+                <div class="download">
+                    <button class="button">
+                        <a href="/images/resume/Software%20Developer%20Vitalii%20Hapon%20.pdf" download>
+                        <span class="button-content">Resume</span>
+                        </a>
+                    </button>
+                </div>
+                </li>
                 <a href="/#support"
                    class="button-border-gradient relative rounded-lg text-white text-sm flex items-center gap-1.5 py-2 px-4.5 shadow-button hover:button-gradient-hover hover:shadow-none">
                     Say Hello
-
                     <svg class="mt-0.5" width="16" height="16" viewBox="0 0 16 16" fill="none"
                          xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -124,7 +131,7 @@
 
                 <h1 class="text-white mb-6 text-3xl font-extrabold sm:text-5xl xl:text-heading-1">
                     Hey, I’m <span class="font-bold text-custom-2 pricing-gradient-text">Vitalii Hapon</span><br>
-                    Web Developer
+                    Software Developer
                 </h1>
                 <p class="max-w-[500px] mx-auto mb-9 font-medium md:text-lg">
                     Building web experiences that connect — constantly evolving, always driven by purpose.
@@ -758,6 +765,17 @@
 </footer>
 <!-- ====== Footer Section End -->
 <!-- ===== Footer End ===== -->
+<!-- ====== Back To Top Start ===== -->
+<button
+        class="hidden items-center justify-center w-10 h-10 rounded-[4px] shadow-solid-5 bg-purple hover:opacity-70 fixed bottom-8 right-8 z-999"
+        @click="window.scrollTo({top: 0, behavior: 'smooth'})"
+        @scroll.window="scrollTop = (window.pageYOffset > 50) ? true : false" :class="{ '!flex' : scrollTop }">
+    <svg class="fill-white w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path
+                d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
+    </svg>
+</button>
+<!-- ====== Back To Top End ===== -->
 <!-- Swiper JS CDN -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="js/bundle.js"></script>

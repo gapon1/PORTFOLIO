@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vitalii Hapon - PNW Warehousing Project</title>
+  <title>Vitalii Hapon - Symfony Easy Admin Project</title>
 <link rel="icon" href="../favicon.ico">
   <!-- Alpine.js CDN -->
   <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
@@ -128,61 +128,88 @@
 
       <div class="text-center px-4">
         <h1 class="font-extrabold text-heading-2 text-white mb-5.5">
-         PNW Warehousing Project Details
+          Symfony Easy Admin Project Details
         </h1>
         <ul class="flex items-center justify-center gap-2">
           <li class="font-medium"><a href="/index.html">Home</a></li>
           <li class="font-medium"><a href="/projects/blog-grid.html"> / All projects</a></li>
-          <li class="font-medium"> / PNW Warehousing Project Details</li>
+          <li class="font-medium"> / Symfony Easy Admin Project Details</li>
         </ul>
       </div>
     </section>
     <!-- ===== Breadcrumb Section End ===== -->
 
     <!-- ===== Blog Single Start ===== -->
-    <section class="">
+    <section class="blog">
       <div class="max-w-[1170px] mx-auto px-4 sm:px-8 xl:px-0">
-        <img src="../images/works/fuul_size/Pnw_full.png" alt="blog" class="mb-10" />
+        <img src="../images/works/fuul_size/symfony.png" alt="blog" class="mb-10" />
 
         <div class="max-w-[870px] mx-auto">
           <h2 class="font-semibold text-white text-[34px] leading-[45px] max-w-[579px] mb-7.5">
-            PNW Warehousing Website
+            Crypto Bot Admin Panel — Automated Cryptocurrency Monitoring & Alert System
           </h2>
           <h6 class="font-extrabold text-2xl text-white mb-6">
             Project Overview:
           </h6>
           <p class="font-medium mb-6">
-            PNW Warehousing is a third-party logistics (3PL) and distribution company based in Washington State. The goal of this project was to design and develop a clean, professional, and responsive website that highlights the company’s full range of logistics services — including warehousing, transloading, e-commerce fulfillment, and transportation.
+            I developed a custom admin dashboard for managing multiple cryptocurrency trading bots, built with Symfony 6. The system allows administrators to monitor, configure, and control automated bots that track live cryptocurrency prices and send real-time alerts.<br>
+            A key feature is Slack API integration, which delivers instant notifications to a Slack channel whenever configured price thresholds are reached — ensuring traders and analysts stay informed without constantly checking dashboards.<br>
           </p>
 
+          <br>
           <h6 class="font-extrabold text-2xl text-white mb-6">
-            Key Features & Functionality:
-          </h6>
-          <p class="font-medium mb-7.5">
-
-            Custom WordPress Theme: Built a lightweight, fully responsive WordPress theme tailored to the brand’s visual identity.
-
-            Service-Focused Layout: Designed structured pages that clearly communicate core services like cross-docking, drayage, and value-added logistics.
-
-            Dynamic Content Management: Integrated Advanced Custom Fields (ACF) for easy backend content updates.
-
-            SEO Optimization: Implemented on-page SEO best practices for improved search visibility.
-
-            Performance & Accessibility: Optimized loading speed, responsive design, and accessibility compliance.
-
-            Contact & Inquiry System: Developed a custom contact form and inquiry management system for client leads.
-          </p>
-
-          <h6 class="font-extrabold text-2xl text-white mb-6">
-            Result:
+            Key Features & Highlights
           </h6>
           <p class="font-medium mb-6">
-            The final website provides a modern digital presence for PNW Warehousing, improving brand credibility and helping the company better engage with potential logistics clients.
+          <ul>
+            <li>Built an intuitive admin panel using Symfony 6 with Twig templates and Bootstrap UI.g</li>
+            <li>Supports adding, editing, activating/deactivating multiple trading bots for different cryptocurrencies (BTC, ETH, USDT, etc.).</li>
+            <li>Each bot can be configured with its own parameters — target currency pairs, threshold prices, alert intervals, and trade triggers.</li>
+            <li>Integrated with external cryptocurrency APIs (e.g., Binance, CoinGecko, or CoinMarketCap) to fetch live price data.</li>
+            <li>Scheduled background workers (using Symfony Messenger or CRON jobs) continuously monitor prices and compare against user-defined thresholds.</li>
+            <li>Implements caching and async jobs for high-frequency data updates without performance bottlenecks.</li>
+            <li>Integrated Slack Web API to send automatic alerts directly into Slack channels or user DMs.</li>
+            <li>Customizable message formatting: includes currency symbol, current price, percentage change, and timestamp.</li>
+            <li>Option to define per-bot Slack channels, so alerts for BTC, ETH, etc. can go to separate channels or users.</li>
+          </ul>
+          <br>
+          <h6 class="font-extrabold text-2xl text-white mb-6">
+            Technologies & Tools
+          </h6>
+          <p class="font-medium mb-6">
+          <ul>
+            <li>Backend: Symfony 6 (PHP 8), Doctrine ORM, Twig</li>
+            <li>Database: MySQL / MariaDB</li>
+            <li>Messaging: Symfony Messenger, Slack Web API</li>
+            <li>Frontend: Bootstrap 5, Chart.js for analytics</li>
+            <li>Automation: CRON jobs / workers for scheduled price checks</li>
+            <li>Version Control & Deployment: Git, Docker-based environment</li>
+          </ul>
+
           </p>
+          <br>
+          <h6 class="font-extrabold text-2xl text-white mb-6">
+            Role & Achievements
+          </h6>
+          <ul>
+            <li>Designed and implemented the full system architecture (database schema, REST endpoints, background jobs).</li>
+            <li>Integrated Slack API and built message templates for alert notifications.</li>
+            <li>Implemented modular structure — easy to add new exchanges or notification channels in the future.</li>
+            <li>Ensured clean code, dependency injection, and service-based architecture following SOLID principles.</li>
+          </ul>
+          <br>
+          <h6 class="font-extrabold text-2xl text-white mb-6">
+            What I’m Proud Of
+          </h6>
+          <ul>
+            <li>Built a fully automated alert system that connects real-time crypto market data with Slack notifications in a clean, maintainable admin panel.</li>
+            <li>Delivered scalable architecture — ready to integrate additional messengers (e.g., Telegram, Discord) or trading automation in future.</li>
+            <li>Demonstrated advanced backend engineering, API integration, and practical DevOps deployment with Symfony 6.</li>
+          </ul>
         </div>
         <!-- From Uiverse.io by himanshu9682 -->
         <div class="container">
-          <a rel="nofollow" target="_blank" href="https://pnwwarehousing.com/" class="button type--C">
+          <a rel="nofollow" target="_blank" href="https://growupcrypto.site/login" class="button type--C">
             <div class="button__line"></div>
             <div class="button__line"></div>
             <span class="button__text">View Project</span>
@@ -201,6 +228,18 @@
           <!-- blog item -->
           <div class="wow fadeInUp group">
             <div class="mb-6 overflow-hidden rounded-xl">
+              <img src="../images/works/carsland1.png" alt="image"
+                   class="ease-linear w-full duration-500 scale-100 group-hover:scale-125" />
+            </div>
+            <h4>
+              <a href="carsland.html" class="text-white font-semibold text-xl ease-in duration-300 hover:opacity-80">
+                The Community Of Carseland
+              </a>
+            </h4>
+          </div>
+          <!-- blog item -->
+          <div class="wow fadeInUp group">
+            <div class="mb-6 overflow-hidden rounded-xl">
               <img src="../images/works/GBC.png" alt="image"
                    class="ease-linear w-full duration-500 scale-100 group-hover:scale-125" />
             </div>
@@ -213,24 +252,12 @@
           <!-- blog item -->
           <div class="wow fadeInUp group">
             <div class="mb-6 overflow-hidden rounded-xl">
-              <img src="../images/works/Books.png" alt="image"
+              <img src="../images/works/Pnw2.png" alt="image"
                    class="ease-linear w-full duration-500 scale-100 group-hover:scale-125" />
             </div>
             <h4>
-              <a href="book.html" class="text-white font-semibold text-xl ease-in duration-300 hover:opacity-80">
-               Barvinok books
-              </a>
-            </h4>
-          </div>
-          <!-- blog item -->
-          <div class="wow fadeInUp group">
-            <div class="mb-6 overflow-hidden rounded-xl">
-              <img src="../images/works/banner-stn-2a.png" alt="image"
-                   class="ease-linear w-full duration-500 scale-100 group-hover:scale-125" />
-            </div>
-            <h4>
-              <a href="suntech.html" class="text-white font-semibold text-xl ease-in duration-300 hover:opacity-80">
-                Suntechnika
+              <a href="pnw.html" class="text-white font-semibold text-xl ease-in duration-300 hover:opacity-80">
+               Pnw Warehousing
               </a>
             </h4>
           </div>
