@@ -75,7 +75,7 @@
     function createProfileCard(
     rootElementId = 'root',
     // Default avatar URL changed to a standard placeholder for reliability
-    avatarUrl = '/images/avatar/Hapon.png',
+    avatarUrl = '/images/avatar/hapon.png',
     name = 'Vitalii Hapon',
     title = 'Software Developer',
     ) {
